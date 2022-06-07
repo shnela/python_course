@@ -3,12 +3,12 @@
 ## Python version
 Check python version in shell.
 ```shell
-python --version  # most often links to deprecated python2
+python --version  # most often links to deprecated python2 or doesn't exist
 python3 --version
 python3 -V
 ```
 
-### Currently used python versions
+### Currently used python versions ([source](https://www.python.org/downloads/))
 <table>
     <tr>
         <th>Python version</th>
@@ -54,17 +54,18 @@ python3 -V
     </tr>
 </table>
 
-## Python vs php
-[php vs Python][]
+## Python vs ...
+* [php vs Python][]
+* [Ruby vs Python][]
 
 Let's look at the code.
 ```shell
-ls -1 ./python_vs_php
-> example.php
-> example.py
-php ./python_vs_php/example.php
+$ ls -1 ./python_vs_php
+$ php ./python_vs_php/example.php  # try some PHP
 > ...
-python3 ./python_vs_php/example.py
+$ ruby ./python_vs_php/example.php  # try some Ruby
+> ...
+$ python3 ./python_vs_php/example.py  # finally try some Python
 > ...
 ```
 
@@ -108,7 +109,7 @@ python ./import_faker.py
 But, what's [PIP][]?
 > The Python Package Index (PyPI) is a repository of software for the Python programming language.
 
-Kind of like [composer][]?
+Kind of like [composer][] (PHP) or [RubyGems][] (Ruby)?
 
 More info about [Virtual Environments and Packages][]
 
@@ -127,8 +128,10 @@ File | Settings | Project: php2python | Python Interpreter
 
 <!--- Links -->
 [php vs Python]: https://kinsta.com/blog/php-vs-python/
+[Ruby vs Python]: https://www.upguard.com/blog/python-vs-ruby
 [Faker]: https://github.com/joke2k/faker
 [PIP]: https://pypi.org/
+[RubyGems]: https://rubygems.org/
 [composer]: https://getcomposer.org/
 [Virtual Environments and Packages]: https://docs.python.org/3/tutorial/venv.html
 [Tools for Setting Up Python on a New Machine]: https://realpython.com/podcasts/rpp/101/
