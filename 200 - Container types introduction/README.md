@@ -164,6 +164,6 @@ assert initialized_set | one_set == {1, 2}
 All set items and dictionary keys must be hashable.
 [`unhashable_elements.py`](unhashable_elements.py)
 
-[dictionaries ordered in Python 3.6+]: https://stackoverflow.com/a/39980744/1565454
+[dictionaries ordered since Python 3.6+]: https://stackoverflow.com/a/39980744/1565454
 [Slicing]: https://stackoverflow.com/a/509295/1565454
 [Set]: https://docs.python.org/3.8/library/stdtypes.html#set-types-set-frozenset
