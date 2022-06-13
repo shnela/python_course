@@ -106,6 +106,16 @@ assert d.get('three') is None
 assert d.get('three', 'fallback val') == 'fallback val'
 ```
 
+### Modifying dict and checking if there are elements
+```python
+d = {
+    'one': 1,
+}
+assert 'two' not in d
+d['two'] = 2
+assert 'two' in d
+```
+
 ### Iterating over dict
 ```python
 d = {

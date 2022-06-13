@@ -28,6 +28,7 @@ if __name__ == '__main__':
     assert text[13:16] == 'old'
     assert text[-8:-5] == 'old'
     assert text[-8:16] == 'old'  # it works, but doesn't look good
+    assert text[::-1] == '.god dlo na saw erehT'
 
     step_by_2 = 'Level'[::2]
     assert step_by_2 == 'Lvl'
@@ -37,14 +38,18 @@ if __name__ == '__main__':
     assert one_two_three[1:2] == [2]
     one_two_three[1:2] = [10, 20, 30]
     assert one_two_three == [1, 10, 20, 30, 3]
+    assert text[-8:16] == 'old'  # it works, but doesn't look good
+    assert text[::-1] == '.god dlo na saw erehT'
 
     reverse_level = 'Level'[:]  # Exercise
     assert reverse_level == 'leveL'
 
+    # replace '.' for '!' in the ned of the string
     with_bang = list(text)
     # with_bang[] =   # Exercise
     assert ''.join(with_bang) == "There was an old dog!"
 
+    # replace part of array, so joined string will contain 'cat' instead of a 'dog'
     with_cat = list(text)
     # with_cat[] = # Exercise
     assert ''.join(with_cat) == "There was an old cat."

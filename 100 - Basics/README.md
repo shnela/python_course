@@ -86,6 +86,24 @@ print(f'{theta=}  {cos(radians(theta))=:.3f}')
 ```
 _new in pytyhon3.8_
 
+## Exception handling 
+```python
+try:
+    # do something
+    do_action()
+    print('great - action done')
+except ExceptionI as e:
+    print('we have problem')
+    raise
+except (ExceptionII, ExceptionIII) as e:
+    raise OtherException('explanation') from e
+else:
+    print('everything went fine - no problem')
+finally:
+    print('always invoke it, good place for closing files etc')
+```
+[exceptions.py](exceptions.py)
+
 ## Unuseful or missing features
 ### Switch statement
 Python doesn't have one.
@@ -113,25 +131,8 @@ while i < x:
 else:
     print('else block')
 ```
-[while_else.py](while_else.py)
 
-## Exception handling 
-```python
-try:
-    # do something
-    do_action()
-    print('great - action done')
-except ExceptionI as e:
-    print('we have problem')
-    raise
-except (ExceptionII, ExceptionIII) as e:
-    raise OtherException('explanation') from e
-else:
-    print('everything went fine - no problem')
-finally:
-    print('always invoke it, good place for closing files etc')
-```
-[exceptions.py](exceptions.py)
+[while_else.py](while_else.py)
 
 [Basic Data Types in Python]: https://realpython.com/python-data-types/
 [Python Max Int]: https://www.pythonpool.com/python-max-int/

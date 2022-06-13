@@ -122,7 +122,7 @@ And great podcast about [Tools for Setting Up Python on a New Machine][]
 
 To set custom environment used by pyCharm go to:
 ```
-File | Settings | Project: php2python | Python Interpreter
+File | Settings | Project: python_course | Python Interpreter
 ```
 `Right Click on gear` &rarr; `Add...` &rarr; `Existing environment` &rarr; `Path to python executable`
 

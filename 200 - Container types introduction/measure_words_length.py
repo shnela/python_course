@@ -39,7 +39,11 @@ if __name__ == '__main__':
 
     # Exercise 3: make it pass
     assert 'Confluence'.startswith('Conf')
-    words_with_prefix = filter_words_with_prefix(words_with_len, required_prefix='C')
-    assert words_with_prefix == {
+    words_with_prefix1 = filter_words_with_prefix(words_with_len, required_prefix='C')
+    assert words_with_prefix1 == {
         'Camels': 6, 'Cape Gannet Bird': 16, 'Chickens': 8, 'Chimpanzee': 10, 'Cuviers Dwarf Caimans': 21
+    }
+    words_with_prefix2 = filter_words_with_prefix(words_with_len, required_prefix='Ch')
+    assert words_with_prefix1 == {
+        'Chickens': 8, 'Chimpanzee': 10,
     }

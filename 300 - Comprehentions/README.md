@@ -48,6 +48,5 @@ assert list(fruits_with_a) == ['apple', 'banana', 'mango']
 
 ## Exercises
 * [measure_words_length.py](measure_words_length.py)
-* [count_words.py](count_words.py)
 
 [List Comprehension]: https://www.w3schools.com/python/python_lists_comprehension.asp
