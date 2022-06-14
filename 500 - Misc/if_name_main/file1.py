@@ -1,6 +1,7 @@
-from auxiliary_code.if_name_main import file2
+from file2 import do_sth
 
-print('file1 loaded')
+print(f'file1 loaded ({__name__})')
 
 if __name__ == '__main__':
     print('file_1 in block if')
+    do_sth()

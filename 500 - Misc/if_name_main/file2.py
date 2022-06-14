@@ -1,8 +1,8 @@
-print('file2 loaded')
+print(f'file2 loaded ({__name__})')
 
 
 def do_sth():
-    pass
+    print('do sth invoked')
 
 
 if __name__ == '__main__':
