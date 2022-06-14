@@ -38,8 +38,19 @@ def delete_post(post_id):
     pass
 
 
+def get_user_posts(user_id: int):
+    response = requests.get(
+        f"https://jsonplaceholder.typicode.com/users/{user_id}/posts",
+    )
+    assert response.status_code == 200
+    response_object = response.json()
+    return response_object
+
+
 if __name__ == "__main__":
-    posts = get_posts()
+    get_user_posts(1)
+
+    all_posts = get_posts()
     post_one = get_post(1)
     assert post_one == {
         'userId': 1,

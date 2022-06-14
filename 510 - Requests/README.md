@@ -80,6 +80,7 @@ curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection
 
 Fake REST API for testing.
 
+[{JSON} Placeholder - guide][]
 > Important: resource will not be really updated on the server but it will be faked as if.
 
 [json_placeholder.py](json_placeholder.py)
@@ -89,3 +90,4 @@ Fake REST API for testing.
 [RequestsToCurl]: https://pypi.org/project/requests-to-curl/
 [More complicated POST requests]: https://requests.readthedocs.io/en/latest/user/quickstart/#more-complicated-post-requests
 [{JSON} Placeholder]: https://jsonplaceholder.typicode.com/
+[{JSON} Placeholder - guide]: https://jsonplaceholder.typicode.com/guide/
