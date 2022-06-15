@@ -2,15 +2,36 @@ import requests
 
 
 def get_posts():
-    pass
+    response = requests.get(
+        "https://jsonplaceholder.typicode.com/posts",
+    )
+    assert response.status_code == 200
+    response_object = response.json()
+    return response_object
 
 
 def get_post(post_id: int):
-    pass
+    response = requests.get(
+        f"https://jsonplaceholder.typicode.com/posts/{post_id}",
+    )
+    assert response.status_code == 200
+    response_object = response.json()
+    return response_object
 
 
 def publish_post(title, body, user_id):
-    pass
+    data = {
+        "title": title,
+        "body": body,
+        "userId": user_id,
+    }
+    response = requests.post(
+        "https://jsonplaceholder.typicode.com/posts",
+        json=data
+    )
+    assert response.status_code == 201
+    response_object = response.json()
+    return response_object
 
 
 def delete_post(post_id):
