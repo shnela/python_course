@@ -71,9 +71,9 @@ print(curl.parse(response3))
 
 #### Result:
 ```
-curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'Content-Type: application/x-www-form-urlencoded' -H 'User-Agent: python-requests/2.28.0' -d 'title=t&body=b&userId=1' https://jsonplaceholder.typicode.com:443/posts
-curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'User-Agent: python-requests/2.28.0' -d '{"title": "t", "body": "b", "userId": 1}' https://jsonplaceholder.typicode.com:443/posts
-curl -X POST -H 'Accept: */*' -H 'Accept-Encoding: gzip, deflate' -H 'Connection: keep-alive' -H 'Content-Type: application/json' -H 'User-Agent: python-requests/2.28.0' -d '{"title": "t", "body": "b", "userId": 1}' https://jsonplaceholder.typicode.com:443/posts
+curl -X POST -H ... -H 'Content-Type: application/x-www-form-urlencoded' -H 'User-Agent: python-requests/2.28.0' -d 'title=t&body=b&userId=1' https://jsonplaceholder.typicode.com:443/posts
+curl -X POST -H ... -H 'User-Agent: python-requests/2.28.0' -d '{"title": "t", "body": "b", "userId": 1}' https://jsonplaceholder.typicode.com:443/posts
+curl -X POST -H ... -H 'Content-Type: application/json' -H 'User-Agent: python-requests/2.28.0' -d '{"title": "t", "body": "b", "userId": 1}' https://jsonplaceholder.typicode.com:443/posts
 ```
 
 ## Fake REST API [{JSON} Placeholder][]

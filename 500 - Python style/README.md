@@ -45,6 +45,8 @@ import this
 >
 > In particular: do not break backwards compatibility just to comply with this PEP!
 
+### [🎵 The PEP 8 Song 🎵]
+
 ### What is Lint?
 > In computer programming lint or lint-like tools performing static analysis of
 > source code checking for symantec discrepancies.
@@ -52,11 +54,25 @@ import this
 > “Linting” means running a basic quality tool against your code.
 > The tool will check your code syntax and provide instructions on how to clean it.
 
-Python Lint tools:
+From [What is Flake8 and why we should use it?]
+
+#### Python Lint tools:
 * [flake8]
 * [pylint]
+* [black]
 
-### [🎵 The PEP 8 Song 🎵]
+```shell
+# in env
+pip install flake8 pylint
+flake8 ugly_module
+# flake8 is complaining
+pylint ugly_module
+# pylint is complaining even more
+black ugly_module
+# black makes some changes
+```
+* [ugly_exercise.py](ugly_module/ugly_exercise.py)
+
 
 ## Exercises:
 * [enum_exercise.py](enum_exercise.py)
@@ -65,7 +81,8 @@ Python Lint tools:
 [PEP 8 - Style Guide for Python Code]: https://www.python.org/dev/peps/pep-0008/
 [PEP 20 - The Zen of Python]: https://www.python.org/dev/peps/pep-0020/
 [PEP 8 — the Style Guide for Python Code (for humans)]: https://pep8.org/
+[🎵 The PEP 8 Song 🎵]: https://www.youtube.com/watch?v=hgI0p1zf31k
 [What is Flake8 and why we should use it?]: https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2
 [flake8]:https://flake8.pycqa.org/en/latest/
 [pylint]: https://pylint.org/
-[🎵 The PEP 8 Song 🎵]: https://www.youtube.com/watch?v=hgI0p1zf31k
+[black]: https://pypi.org/project/black/
