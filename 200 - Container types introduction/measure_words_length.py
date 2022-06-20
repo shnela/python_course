@@ -44,6 +44,6 @@ if __name__ == '__main__':
         'Camels': 6, 'Cape Gannet Bird': 16, 'Chickens': 8, 'Chimpanzee': 10, 'Cuviers Dwarf Caimans': 21
     }
     words_with_prefix2 = filter_words_with_prefix(words_with_len, required_prefix='Ch')
-    assert words_with_prefix1 == {
+    assert words_with_prefix2 == {
         'Chickens': 8, 'Chimpanzee': 10,
     }

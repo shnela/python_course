@@ -60,12 +60,12 @@ python3 -V
 
 Let's look at the code.
 ```shell
-$ ls -1 ./python_vs_php
-$ php ./python_vs_php/example.php  # try some PHP
+$ ls -1 ./python_vs
+$ php ./python_vs/example.php  # try some PHP
 > ...
-$ ruby ./python_vs_php/example.php  # try some Ruby
+$ ruby ./python_vs/example.php  # try some Ruby
 > ...
-$ python3 ./python_vs_php/example.py  # finally try some Python
+$ python3 ./python_vs/example.py  # finally try some Python
 > ...
 ```
 

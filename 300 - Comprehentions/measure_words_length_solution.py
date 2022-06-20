@@ -24,8 +24,18 @@ if __name__ == '__main__':
 
     # Exercise 3: make it pass
     assert 'Confluence'.startswith('Conf')
-    # Filter words_with_len where key starts with 'C'
-    words_with_prefix = {word: word_len for word, word_len in words_with_len.items() if word.startswith('C')}
+    # Filter words_with_len where key starts with 'prefix_to_filter'
+    prefix_to_filter = 'C'
+    words_with_prefix = {
+        word: word_len for word, word_len in words_with_len.items() if word.startswith(prefix_to_filter)
+    }
     assert words_with_prefix == {
         'Camels': 6, 'Cape Gannet Bird': 16, 'Chickens': 8, 'Chimpanzee': 10, 'Cuviers Dwarf Caimans': 21
+    }
+    prefix_to_filter = 'Ch'
+    words_with_prefix2 = {
+        word: word_len for word, word_len in words_with_len.items() if word.startswith(prefix_to_filter)
+    }
+    assert words_with_prefix2 == {
+        'Chickens': 8, 'Chimpanzee': 10,
     }
