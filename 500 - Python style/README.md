@@ -1,4 +1,4 @@
-# Misc
+# Python style
 
 ## [PEP 20 - The Zen of Python]
 ```python
@@ -58,11 +58,6 @@ Python Lint tools:
 
 ### [🎵 The PEP 8 Song 🎵]
 
-## [Pickle]
-### Examples
-* [json_example.py](json_example.py)
-* [pickle_example.py](pickle_example.py)
-
 ## Exercises:
 * [enum_exercise.py](enum_exercise.py)
 
@@ -74,4 +69,3 @@ Python Lint tools:
 [flake8]:https://flake8.pycqa.org/en/latest/
 [pylint]: https://pylint.org/
 [🎵 The PEP 8 Song 🎵]: https://www.youtube.com/watch?v=hgI0p1zf31k
-[Pickle]: https://docs.python.org/3/library/pickle.html
