@@ -20,7 +20,7 @@ if __name__ == '__main__':
     elements = [1, 2, 3.14, 'simple_text']
     direct_conversion(elements)
     direct_conversion(elements)
-    file_conversion(elements, './list.json')
+    file_conversion(elements, './list.pkl')
 
     """
     What's the problem with float?
