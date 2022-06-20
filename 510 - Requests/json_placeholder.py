@@ -18,12 +18,7 @@ def delete_post(post_id):
 
 
 def get_user_posts(user_id: int):
-    response = requests.get(
-        f"https://jsonplaceholder.typicode.com/users/{user_id}/posts",
-    )
-    assert response.status_code == 200
-    response_object = response.json()
-    return response_object
+    pass
 
 
 if __name__ == "__main__":
