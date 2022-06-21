@@ -64,9 +64,14 @@ pytest --junitxml=path
 [test_decoder_exercise.py](./test_decoder_exercise.py)
 [test_decoder_exercise_pytest.py](./test_decoder_exercise_pytest.py)
 
-## Features
+### Features
 * [yield fixtures]
 * [How to parametrize fixtures and test functions] - look at `test_changing_channels` and `test_setting_negative_channel`
+
+
+## Mocking
+[unittest.mock — mock object library]
+
 
 [xUnit]: https://en.wikipedia.org/wiki/XUnit
 [unittest — Unit testing framework]: https://docs.python.org/3/library/unittest.html
@@ -77,3 +82,4 @@ pytest --junitxml=path
 [Jenkins - JUnit]: https://plugins.jenkins.io/junit/
 [yield fixtures]: https://docs.pytest.org/en/7.1.x/how-to/fixtures.html#yield-fixtures-recommended
 [How to parametrize fixtures and test functions]: https://docs.pytest.org/en/7.1.x/how-to/parametrize.html#parametrize
+[unittest.mock — mock object library]: https://docs.python.org/3/library/unittest.mock.html

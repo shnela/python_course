@@ -1,5 +1,7 @@
 import enum
 from functools import wraps
+from random import random
+from time import sleep
 
 
 class DecoderException(Exception):
@@ -14,6 +16,13 @@ class State(enum.Enum):
 class ResolutionChoice(enum.Enum):
     hd = 'HD'
     full_hd = 'FHD'
+
+
+class Server:
+    def check_payment(self):
+        sleep(1)
+        val = random()
+        return val > 0.1
 
 
 def do_not_operate_on_standby(f):
@@ -34,6 +43,16 @@ class Decoder:
         self._resolution = ResolutionChoice.hd
         self._current_channel = 1
         self._state = State.standby
+        self._server = Server()
+        self._blocked = False
+
+    def check_payment(self):
+        payment_ok = self._server.check_payment()
+        if not payment_ok:
+            self._blocked = True
+
+    def is_blocked(self):
+        return self._blocked
 
     @do_not_operate_on_standby
     def set_resolution(self, resolution: ResolutionChoice) -> None:

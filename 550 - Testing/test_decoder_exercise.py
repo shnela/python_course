@@ -107,5 +107,3 @@ class TestDecoder(unittest.TestCase):
             self.decoder.channel_up()
         with self.assertRaises(DecoderException):
             self.decoder.channel_down()
-
-
