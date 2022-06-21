@@ -59,9 +59,19 @@ pytest
 pytest --junitxml=path
 ```
 
+### pytest vs unittest
+[test_decoder_exercise.py](./test_decoder_exercise.py)
+[test_decoder_exercise_pytest.py](./test_decoder_exercise_pytest.py)
+
+## Features
+* [yield fixtures]
+* [How to parametrize fixtures and test functions] - look at `test_changing_channels` and `test_setting_negative_channel`
+
 [xUnit]: https://en.wikipedia.org/wiki/XUnit
 [unittest — Unit testing framework]: https://docs.python.org/3/library/unittest.html
 [Test cases]: https://docs.python.org/3/library/unittest.html#test-cases
 [Command-Line Interface]: https://docs.python.org/3/library/unittest.html#command-line-interface
 [pytest: helps you write better programs]: https://docs.pytest.org/
 [Creating JUnitXML format files]: https://docs.pytest.org/en/7.1.x/how-to/output.html#creating-junitxml-format-files
+[yield fixtures]: https://docs.pytest.org/en/7.1.x/how-to/fixtures.html#yield-fixtures-recommended
+[How to parametrize fixtures and test functions]: https://docs.pytest.org/en/7.1.x/how-to/parametrize.html#parametrize
