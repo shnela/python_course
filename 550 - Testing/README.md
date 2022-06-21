@@ -58,6 +58,7 @@ pytest
 ```shell
 pytest --junitxml=path
 ```
+[Jenkins - JUnit]
 
 ### pytest vs unittest
 [test_decoder_exercise.py](./test_decoder_exercise.py)
@@ -73,5 +74,6 @@ pytest --junitxml=path
 [Command-Line Interface]: https://docs.python.org/3/library/unittest.html#command-line-interface
 [pytest: helps you write better programs]: https://docs.pytest.org/
 [Creating JUnitXML format files]: https://docs.pytest.org/en/7.1.x/how-to/output.html#creating-junitxml-format-files
+[Jenkins - JUnit]: https://plugins.jenkins.io/junit/
 [yield fixtures]: https://docs.pytest.org/en/7.1.x/how-to/fixtures.html#yield-fixtures-recommended
 [How to parametrize fixtures and test functions]: https://docs.pytest.org/en/7.1.x/how-to/parametrize.html#parametrize
