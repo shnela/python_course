@@ -61,8 +61,8 @@ pytest --junitxml=path
 [Jenkins - JUnit]
 
 ### pytest vs unittest
-[test_decoder_exercise.py](./test_decoder_exercise.py)
-[test_decoder_exercise_pytest.py](./test_decoder_exercise_pytest.py)
+[test_decoder_exercise.py](old_tests/test_decoder_exercise.py)
+[test_decoder_exercise_pytest.py](old_tests/test_decoder_exercise_pytest.py)
 
 ### Features
 * [yield fixtures]

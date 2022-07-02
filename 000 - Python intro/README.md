@@ -91,10 +91,10 @@ Now run files: [`import_datetime.py`](import_datetime.py) and [`import_faker.py`
 ### External dependencies
 Let's use 3rd party [Faker][].
 ```shell
-# Create new python environment in '~/.envs/test'
-python3 -m venv ~/.envs/training_env
+# Create new python environment in '~/.envs/'
+python3 -m venv ~/.envs/course
 # Activate environment
-source ~/.envs/training_env/bin/activate
+source ~/.envs/course/bin/activate
 # Now we can use 'python' instead of 'python3'
 which python
 
@@ -115,7 +115,8 @@ More info about [Virtual Environments and Packages][]
 
 And great podcast about [Tools for Setting Up Python on a New Machine][]
 
-### Run in pyCharm
+### Run in IDE
+#### pyCharm
 [Create and edit run/debug configurations][]
 
 `Right Click on <file name>` &rarr; `Run <file name>`
@@ -125,6 +126,16 @@ To set custom environment used by pyCharm go to:
 File | Settings | Project: python_course | Python Interpreter
 ```
 `Right Click on gear` &rarr; `Add...` &rarr; `Existing environment` &rarr; `Path to python executable`
+
+Executable: `~/.envs/course/bin/python`
+
+### Visual Studio Code
+[Using Python environments in VS Code]
+
+* Press: `Ctrl + Shift + P`
+* Type: `Python: Select Interpreter`
+* Select env executable `~/.envs/course/bin/python`
+
 
 <!--- Links -->
 [php vs Python]: https://kinsta.com/blog/php-vs-python/
@@ -136,3 +147,4 @@ File | Settings | Project: python_course | Python Interpreter
 [Virtual Environments and Packages]: https://docs.python.org/3/tutorial/venv.html
 [Tools for Setting Up Python on a New Machine]: https://realpython.com/podcasts/rpp/101/
 [Create and edit run/debug configurations]: https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html
+[Using Python environments in VS Code]: https://code.visualstudio.com/docs/python/environments
